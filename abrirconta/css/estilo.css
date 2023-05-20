@@ -65,11 +65,12 @@ header{
 }
 input{
     text-align: center;
-    padding: 5px;
+    padding: 12px;
     margin-top: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: solid aqua;
+    border-bottom: solid aqua;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
 }
 
 .button{
