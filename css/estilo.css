@@ -1,0 +1,69 @@
+body{
+    padding: 5px;
+    text-align: center;
+}
+
+header{
+    text-align: center;
+    color: green;
+}
+
+.div-foto{ 
+
+    color: blue;
+    text-align: center;
+    padding: 10px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.div-foto:hover{
+    background-color: aqua;
+    transition: 1s;
+}
+.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .img:hover{
+        animation: img-spin infinite 10s linear;
+    }
+}
+
+@keyframes img-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+a{
+    color: green;
+    font: bold 10pt caption;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 3px;
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+}
+
+a:hover{
+    background-color: aqua;
+    color: blue;
+    transition: 1s;
+}
+
+
+
+

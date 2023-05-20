@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" class="icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Abrir Conta</title>
+</head>
+<header>
+    <h1>EssênciMessanger</h1>
+</header>
+<body>
+    <div class="Meubody">
+        <div class="criarconta" id="passo1">
+            <h3 class="textoabertura">Criar Conta</h3>
+            <label for="id-email">E-mail</label>
+            <input type="email" placeholder="Digite Seu E-mail" name="email" id="id-email">
+            <br>
+            <label for="id-senha">Senha</label>
+            <input type="password" placeholder="Ex.:Matias123456@" name="senha" id="id-senha">    
+            <br>
+            <label for="id-senha1">Senha Repita</label>
+            <input type="password" placeholder="Ex.:Matias123456@" name="senha1" id="id-senha1"> 
+            <br>
+            <input type="button" class="button" value="Continuar" onclick="Continuar0()" >
+            <h3 class="textoabertura">Passo 1</h3>
+        </div>
+
+        <div class="criarconta" id="passo2">
+            <h3 class="textoabertura">Criar Conta</h3>
+            <label for="id-email">Nome</label>
+            <input type="email" placeholder="Com Inicial Maiúsculo" name="nome" id="id-nome">
+            <br>
+            <label for="id-senha">Sobrenome</label>
+            <input type="password" placeholder="Com Inicial Maiúsculo" name="sobrenome" id="id-sobrenome">    
+            <br>
+            <label for="id-senha1">Morada</label>
+            <input type="password" placeholder="Local Onde Reside" name="morada" id="id-morada"> 
+            <br>
+            <input type="button" class="button" value="Voltar" onclick="Voltar0()" >   
+            <input type="button" class="button" value="Continuar" onclick="Continuar1()" >
+            <h3 class="textoabertura">Passo 2</h3>
+        </div>
+        <div class="criarconta" id="passo3">
+            <h3 class="textoabertura">Criar Conta</h3>
+            <label for="id-email">Nome</label>
+            <input type="email" placeholder="Com Inicial Maiúsculo" name="nome" id="id-nome">
+            <br>
+            <label for="id-senha">Sobrenome</label>
+            <input type="password" placeholder="Com Inicial Maiúsculo" name="sobrenome" id="id-sobrenome">    
+            <br>
+            <label for="id-senha1">Morada</label>
+            <input type="password" placeholder="Local Onde Reside" name="morada" id="id-morada"> 
+            <br>
+            <input type="button" class="button" value="Voltar" onclick="Voltar1()" >   
+            <input type="button" class="button" value="Concluir" onclick="Continuar2()" >
+            <h3 class="textoabertura">Passo Final</h3>
+        </div>
+    </div>
+    
+    <footer>
+        <input type="button" class="footer" value="+" onclick="Footer()">
+        <div class="opcao" id="opcao" >
+            <input type="button" value="Negociações">
+            <input type="button" value="EssênciMessanger">
+            <input type="button" value="Seja Apoiador">
+        </div>
+    </footer>
+
+    <script src="/javascript/programa.js"></script>
+    <script src="../jquery/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $("#passo2").hide()
+        $("#passo3").hide()
+        $("#opcao").hide()
+        function Voltar0() {
+            $("#passo1").toggle(500)
+            $("#passo2").toggle(500)
+            $("#opcao").hide(500)
+
+        }
+        function Voltar1() {
+            $("#passo3").hide(500)
+            $("#passo2").show(500)
+            $("#opcao").hide(500)
+
+        }
+        function Continuar0() {
+            $("#passo1").hide(500)
+            $("#passo2").show(500)
+            $("#opcao").hide(500)
+
+        }
+        function Continuar1() {
+            $("#passo2").hide(500)
+            $("#passo3").show(500)
+            $("#opcao").hide(500)
+
+        }
+        function Footer() {
+            $("#opcao").toggle(500)
+        }
+    </script>
+    
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,92 @@
+body{
+    background-color: whitesmoke;
+}
+
+
+header{
+    font: bolder 12.5pt caption;
+    color: blue;
+    text-align: center;
+}
+
+.form{
+    color: whitesmoke;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+
+
+}
+
+a{
+    font: bolder 12pt caption;
+    color: blue;
+}
+
+label{
+    margin-bottom: 5px;
+    font: bolder 18pt caption;
+    color: blue;
+}
+
+.emailsenha{
+    background-attachment: fixed;
+    text-align: center;
+    border: none;
+    padding: 14px;
+    border-bottom: solid blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+
+}
+input{
+    padding: 10px;
+    margin: 5px;
+}
+
+.mais{
+    font: bolder 12pt caption;
+    color: blue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.384);
+
+}
+
+.entrar{
+    font: bolder 12pt caption;
+    color: blue;
+    border: solid blue;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+}
+footer{
+    margin: 10px;
+    display: flex;
+}
+
+.footer{
+    background-color: blue;
+    color: whitesmoke;
+    font: bolder 12pt caption;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.opcao{
+    text-align: center;
+    max-width: 250px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+
+
