@@ -5,5 +5,5 @@ let senha = document.querySelector("#id-senha").val()
 function Entrar() {
     alert("Ok")
 
-    window.location.href = "/paginainicial/index.html"
+    window.location.href="/paginainicial.html"
 }
