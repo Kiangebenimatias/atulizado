@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
     <link rel="stylesheet" href="./css/estilo.css">
     <title>Login</title>
 </head>
@@ -28,7 +31,7 @@
             </form>
         </div>
         <footer>
-            <input type="button" class="footer" value="+" onclick="Footer()">
+            <span class="material-icons" id="mais" onclick="Mais()">add</span>
             <div class="opcao" id="opcao" >
                 <input type="button" class="mais" value="Negociações">
                 <br>
@@ -39,5 +42,19 @@
         </footer>
     </div>
     <script src="./javascript/programa.js"></script>
+    <script src="../jquery/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $("#opcao").hide()
+
+        function Mais(){
+            $("#opcao").toggle(500)
+        }
+    </script>
 </body>
 </html>
+
+
+
+
+
