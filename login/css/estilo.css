@@ -24,7 +24,7 @@ header{
 }
 
 a{
-    font: bolder 12pt caption;
+    font: bolder 10pt caption;
     color: blue;
 }
 
@@ -57,19 +57,27 @@ input{
     padding-top: 10px;
     width: 40px;
     height: 35px;
-    border-radius: 50%;
+    border-radius: 50% 0% 50% 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.384);
     cursor: pointer;
 
 }
+#mais:hover{
+    transform: scaleX(4);
+    transform: scaleY(1.5);
+    transition: 0.5s;
+}
 
 .entrar{
     background-color: green;
-    font: bolder 12pt caption;
+    font: bolder 10pt caption;
     color: whitesmoke;
     border: solid blue;
-    padding: 8px;
-    border-radius: 15px 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 20px;
+    border-radius: 25px 0px 25px 25px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
 }
 footer{
@@ -104,5 +112,6 @@ footer{
 }
 
 
-
+.material-icons{
+}
 

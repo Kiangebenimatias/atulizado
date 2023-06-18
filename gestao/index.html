@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+    <title>Gestão</title>
+</head>
+<body>
+    <header>
+        <h1 class="header" >Gestão Interna</h1>
+    </heade>
+    <div class="Flex" >
+        <nav>
+            <span class="material-icons" id="Mais"  onclick="menu()"  >
+                menu
+            </span>
+            <main class="Menu">
+                <input class="Sors" type="button" value="Mais">
+                <br>
+                <span class="material-icons" id="close" onclick="Fechar()" >
+                    close
+                </span>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        home
+                    </span>
+                    Pagina Inicial
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        person
+                    </span>
+                    Meu Perfil
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        group
+                    </span>
+                    Outros Usuários
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                       chat
+                    </span>
+                    Messagens
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        groups
+                    </span>
+                    Comunidade
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        handshake
+                    </span>
+                    Apoiar
+                </a>
+                <br>
+                <a class="a" href="#">
+                    <span class="material-icons" >
+                        settings
+                    </span>
+                    Definições
+                </a>
+                <p class="a" >
+                    <span class="material-icons" id="tema" onclick="Tema()" >
+                        autorenew
+                    </span>
+                    Muda de Tema
+                </p>
+                <br>
+                <input class="Sors1" type="button" value="Mais">
+            </main>
+        </nav>
+        <section>
+
+            <div class="Img" ><img class="img" style="width: 200px;" src="/img/paginainicial.png" alt="teste"></div>
+            <br>
+            <input type="search" name="procurar" id="procurar" placeholder="Procurar Projectos Finalizados">
+            <br>
+            <a class="Home" href="#">
+                <span class="material-icons" >
+                    hub
+                </span>
+                Comerciais
+            </a>
+            <a class="Home" href="#">
+                <span class="material-icons" >
+                    settings
+                </span>
+                Técnicos
+            </a>
+            <a class="Home" href="#">
+                <span class="material-icons" >
+                    group
+                </span>
+                Sócios
+            </a>
+            <a class="Home" href="#">
+                <span class="material-icons" >
+                    groups
+                </span>
+                Clientes
+            </a>
+        </section>
+    </div>
+
+    <script src="/jquery/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(".Menu").hide()
+
+        function menu() {
+            $(".Menu").toggle(500)
+            $("#Mais").hide()
+
+        }
+
+        function Fechar() {
+            $(".Menu").toggle(500)
+            $("#Mais").toggle(500)
+        }
+
+        function Tema() {
+
+            $(document.body).css('background', 'black')
+
+            $(".header").css('color', 'white')
+
+            $(".a").css('font-size', '12pt')
+            $("#Mais").css('color', 'white')
+            $(".Home").css('background', 'grey')
+
+            $(".Img").css('border', 'solid, white')
+
+            $("#procurar").css('background', 'grey')
+            $("#procurar").css('border', 'solid')
+
+            $(".Sors").css('background', 'grey')
+            $(".Sors1").css('background', 'grey')
+
+            $(".Menu").css('background', 'grey')
+
+        }
+
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font: 14.5pt caption;
+}
+
+body{
+
+    background-color: aqua;
+}
+
+.Flex{
+    display: flex;
+}
+
+header > h1{
+    font: bolder 22.5pt caption;
+    color: blue;
+    margin: 5px;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.338);
+}
+
+.Sors{
+
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-top: -2px;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    border: none;
+    border-radius: 0px 10px;
+}
+
+.Sors1{
+
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    margin-left: -100px;
+    border: none;
+    border-radius: 0px 0px 10px;
+}
+
+nav > main {
+    background-color: blue;
+    color: white;
+    max-width: 200px;
+    padding-left: 30px;
+    padding-right: 40px;
+    border-radius: 100px 0px 100px 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.533);
+
+}
+
+span{
+    cursor: pointer;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.512);
+
+}
+
+#close{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+
+nav > main > a {
+    margin-top: 15px;
+    padding: 5px;
+    font: 10pt caption;
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.535);
+}
+
+nav > main > p {
+    font: 10pt caption;
+}
+
+.Img{
+    background-color: white;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 50% 0% 50%;
+    border: solid blue;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.533);
+}
+
+section > input {
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 35px;
+    border: solid blue;
+    border-radius: 20px 20px 0px 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.533);
+}
+
+section{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section > .Home {
+    text-align: center;
+    text-decoration: none;
+    font: 11pt caption;
+    padding: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 0px 70px 70px 70px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.442);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.535);
+    cursor: pointer;
+
+}
+
+section > .Home:hover{
+    transition: 0.5s;
+    transform: scaleX(2);
+    transform: scaleY(2);
+}
+
+#Mais{
+    font: 60pt;
+    margin-left: 15px;
+    color: blue;
+}

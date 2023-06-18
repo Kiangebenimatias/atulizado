@@ -18,16 +18,18 @@
         </header>
         <div class="form">
             <form action="">
-                <label for="id-email">Usuário </label>
+                <label for="email">Usuário </label>
                 <br>
-                <input type="email" placeholder="Digite O Seu E-Mail Válido" class="emailsenha" name="email" id="id-email">
+                <input type="email" placeholder="Digite O Seu E-Mail Válido" class="emailsenha" name="email" id="email">
                 <br>
                 <label for="id-senha">Senha</label>
                 <br>
-                <input type="password" placeholder="Digite A Sua Senha Válido" class="emailsenha" name="senha" id="id-senha">
+                <input type="password" placeholder="Digite A Sua Senha Válido" class="emailsenha" name="senha" id="senha">
                 <br>
-                <a href="../abrirconta/index.html">Abrir Conta</a>
-                <input type="button" class="entrar"  value="Entrar" onclick="Entrar()">
+                <a href="../abrirconta/index.html">
+                    Abrir Conta
+                </a>
+                <input type="button" class="entrar"  value="Login" onclick="Entrar()">
             </form>
         </div>
         <footer>
@@ -49,6 +51,32 @@
 
         function Mais(){
             $("#opcao").toggle(500)
+        }
+
+        function Entrar() {
+
+            //CAPTURANDO DADOS -EMAIL E SENHA
+            let email = $("#email").val()
+            let senha = $("#senha").val()
+
+
+            //CONDICIONANDO O ACESSO AO GESTAO
+            if (email == "kiangebenimatias9@gmail.com") {
+
+                if (senha == 123456) {
+
+                    window.location.href = "../gestao/index.html"
+
+                } else {
+
+                    alert("Senha Incorrecta")
+                }
+
+            } else {
+
+                alert("E-mail Invalido")
+
+            }
         }
     </script>
 </body>

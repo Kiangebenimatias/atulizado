@@ -49,6 +49,7 @@ header{
     }
 }
 a{
+    text-align: center;
     color: green;
     font: bold 10pt caption;
     text-decoration: none;
